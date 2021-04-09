@@ -1,0 +1,65 @@
+/*  ----------- Fontes ---------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+/* ---------- Global ---------*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.size-box{
+   height: 600px; 
+}
+
+body{
+    font-family: Didact Gothic;
+}
+
+/* ---------- Background ---------- */
+.bg-color{
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.margin-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ---------- Header ---------- */
+#logo{
+    margin-left: 45px;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    padding: 10px;
+    margin-right: 5px;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+}
+
+a:hover{
+    opacity: 0.5;
+}
+
+/*---------- Main ----------*/
+h1{
+    padding: 21px 0;
+    margin-left: 35px;
+    margin-top: 150px;
+    color: white;
+    font-size: 40px;
+}
