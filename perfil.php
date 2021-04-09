@@ -9,6 +9,7 @@ require_once './backend/connection.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/main.css">
     <title>DIVLOPERS></title>
 </head>
 <body>
@@ -18,6 +19,8 @@ require_once './backend/connection.php';
 
     <div class="container mt-4 mb-5">
         <h2>Editar Perfil</h2>
+        <img class="foto" src="img/user.png" alt="Foto_usuario">
+        <input type="file" id="foto_user" name="foto_user" accept="img/user.png">
         <form class="container box" method="POST" action="./backend/update.php">
             <input type="hidden" value="<?php echo $_SESSION['id_usuario'];?>" /> 
             

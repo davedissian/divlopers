@@ -1,5 +1,5 @@
 <?php
-session_start();
+/* session_start(); */
 if(!$_SESSION['email']){
     echo "<script>
             alert('Por favor faça o login!');

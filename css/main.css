@@ -75,3 +75,9 @@ a:hover{
     max-width: 50%;
     margin: auto;
 }
+
+.foto {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+}
