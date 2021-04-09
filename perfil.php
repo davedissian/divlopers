@@ -40,11 +40,11 @@ require_once './backend/connection.php';
 				<option value="M">Masculino</option>
 				<option value="I">Indefinido</option>
 			</select>
-
+            <!--
             <label for="senha" class="col-form-label">Senha</label>
             <input type="password" class="list-group-item" id="senha" name="senha" value="<?php echo $_SESSION['senha'];?>"/>
-            
-            <button class="btn btn-success p-1 my-1 border-none">Alterar</button>
+            -->
+            <br><button class="btn btn-success p-1 my-1 border-none">Alterar</button>
             <a href="./backend/delete.php" class="btn btn-danger p-1 my-1 border-none">Deletar</a>
             <a href="./backend/logout.php" class="btn btn-primary p-1 my-1 border-none">Sair</a>
         </form>

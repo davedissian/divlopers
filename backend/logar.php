@@ -15,7 +15,7 @@ if(empty($_POST['email']) || empty($_POST['senha'])){
     if($encontrar == 1){
         while ($row = mysqli_fetch_assoc($executar)) {
             $_SESSION['id_usuario'] = $row['id_usuario'];
-            $_SESSION['nome'] = $row['nome_usuario'];
+            $_SESSION['nome'] = $row['nome'];
             $_SESSION['email'] = $row['email'];
             $_SESSION['cpf'] = $row['cpf'];
             $_SESSION['telefone'] = $row['telefone'];

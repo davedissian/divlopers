@@ -18,12 +18,13 @@
 			<p>Em obras...</p>
 		<h4>Em ordem alfabetica</h4>
 				<?php
-					$nomes = "SELECT id_usuario, nome FROM usuario ORDER BY nome ASC";
+					
+					$nomes = "SELECT * FROM usuario ORDER BY nome ASC";
 					$executa = mysqli_query($connect, $nomes);
 					while($dados = mysqli_fetch_array($executa)){
 				?>
 					<input type="hidden" name="id_usuario" value="<?php echo $dados['id_usuario'] ?>">
-					<a href="ficha.php" name="nome"><?php echo $dados['nome'] ?></a><br>
+					<a href="ficha.php?id='<?php echo $dados['id_usuario'] ?>'" name="nome"><?php echo $dados['nome'] ?></a><br>
 						
 				<?php
 				}

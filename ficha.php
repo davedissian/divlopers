@@ -13,12 +13,14 @@
 	?>
 
     <?php
-        $programador = "SELECT * FROM usuario";
+        $id_usuario = $_GET['id'];
+        $programador = "SELECT id_usuario, nome, email, telefone FROM usuario WHERE id_usuario = $id_usuario";
         $executa = mysqli_query($connect, $programador);
         $dados = mysqli_fetch_array($executa)
     ?>
 
     <div class="container mt-4 mb-5">
+        <input type="hidden" value="<?php echo $dados['id_usuario']?>">
         <h2><?php echo $dados['nome'];?></h2>
 
         <label for="email" class="col-form-label">E-mail</label>
@@ -29,7 +31,7 @@
 
     </div> 
 
-    <?php    
+    <?php                                                           
 	require_once 'footer.html';
 	?>
 </body>
